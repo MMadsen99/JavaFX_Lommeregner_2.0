@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="296.0" prefWidth="208.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <TextArea fx:id="Tekst" layoutX="8.0" layoutY="10.0" prefHeight="44.0" prefWidth="198.0" />
+      <Button layoutX="9.0" layoutY="178.0" mnemonicParsing="false" onAction="#Knap1" prefHeight="27.0" prefWidth="28.0" text="1" />
+      <Button layoutX="57.0" layoutY="178.0" mnemonicParsing="false" onAction="#Knap2" prefHeight="27.0" prefWidth="28.0" text="2" />
+      <Button layoutX="107.0" layoutY="178.0" mnemonicParsing="false" onAction="#Knap3" text="3" />
+      <Button layoutX="8.0" layoutY="127.0" mnemonicParsing="false" onAction="#Knap4" prefHeight="27.0" prefWidth="26.0" text="4" />
+      <Button layoutX="57.0" layoutY="127.0" mnemonicParsing="false" onAction="#Knap5" prefHeight="27.0" prefWidth="28.0" text="5" />
+      <Button layoutX="107.0" layoutY="127.0" mnemonicParsing="false" onAction="#Knap6" prefHeight="27.0" prefWidth="28.0" text="6" />
+      <Button layoutX="8.0" layoutY="75.0" mnemonicParsing="false" onAction="#Knap7" prefHeight="27.0" prefWidth="28.0" text="7" />
+      <Button layoutX="55.0" layoutY="75.0" mnemonicParsing="false" onAction="#Knap8" prefHeight="27.0" prefWidth="28.0" text="8" />
+      <Button layoutX="107.0" layoutY="75.0" mnemonicParsing="false" onAction="#Knap9" text="9" />
+      <Button layoutX="171.0" layoutY="75.0" mnemonicParsing="false" onAction="#knapPLus" text="+" />
+      <Button layoutX="170.0" layoutY="127.0" mnemonicParsing="false" onAction="#knapminus" prefHeight="27.0" prefWidth="28.0" text="-" />
+      <Button layoutX="170.0" layoutY="178.0" mnemonicParsing="false" onAction="#knapDividere" prefHeight="27.0" prefWidth="28.0" text="/" />
+      <Button layoutX="170.0" layoutY="227.0" mnemonicParsing="false" onAction="#knapGange" prefHeight="27.0" prefWidth="28.0" text="*" />
+      <Button layoutX="8.0" layoutY="266.0" mnemonicParsing="false" onAction="#calc" prefHeight="27.0" prefWidth="75.0" text="=" />
+      <Button layoutX="8.0" layoutY="227.0" mnemonicParsing="false" onAction="#Knap0" prefHeight="27.0" prefWidth="26.0" text="0" />
+      <Label layoutX="98.0" layoutY="271.0" prefHeight="17.0" prefWidth="111.0" text="Lommeregner 2.0" />
+      <Button layoutX="56.0" layoutY="227.0" mnemonicParsing="false" onAction="#clear" prefHeight="27.0" prefWidth="26.0" text="C" />
+   </children>
+</AnchorPane>
