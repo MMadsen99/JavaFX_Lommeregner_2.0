@@ -7,7 +7,7 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="296.0" prefWidth="208.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
    <children>
-      <TextArea fx:id="Tekst" layoutX="8.0" layoutY="10.0" prefHeight="44.0" prefWidth="198.0" />
+      <TextArea fx:id="Tekst" layoutX="8.0" layoutY="10.0" prefHeight="44.0" prefWidth="186.0" />
       <Button layoutX="9.0" layoutY="178.0" mnemonicParsing="false" onAction="#Knap1" prefHeight="27.0" prefWidth="28.0" text="1" />
       <Button layoutX="57.0" layoutY="178.0" mnemonicParsing="false" onAction="#Knap2" prefHeight="27.0" prefWidth="28.0" text="2" />
       <Button layoutX="107.0" layoutY="178.0" mnemonicParsing="false" onAction="#Knap3" text="3" />

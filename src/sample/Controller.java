@@ -9,9 +9,9 @@ public class Controller {
     @FXML
     TextArea Tekst;
 
+
     public void Knap0(){
         Tekst.appendText("0");
-
     }
     public void Knap1(){
         Tekst.appendText("1");
@@ -56,14 +56,5 @@ public class Controller {
     public void clear(){
         Tekst.clear();
     }
-    public void calc(){
-        Tekst.getText();
 
-
-       // String s = String.valueOf(i);
-
-
-       // Tekst.setText(s);
-
-    }
 }
