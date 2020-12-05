@@ -1,29 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.control.TextArea?>
-<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="296.0" prefWidth="208.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+
+<Pane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
    <children>
-      <TextArea fx:id="Tekst" layoutX="8.0" layoutY="10.0" prefHeight="44.0" prefWidth="186.0" />
-      <Button layoutX="9.0" layoutY="178.0" mnemonicParsing="false" onAction="#Knap1" prefHeight="27.0" prefWidth="28.0" text="1" />
-      <Button layoutX="57.0" layoutY="178.0" mnemonicParsing="false" onAction="#Knap2" prefHeight="27.0" prefWidth="28.0" text="2" />
-      <Button layoutX="107.0" layoutY="178.0" mnemonicParsing="false" onAction="#Knap3" text="3" />
-      <Button layoutX="8.0" layoutY="127.0" mnemonicParsing="false" onAction="#Knap4" prefHeight="27.0" prefWidth="26.0" text="4" />
-      <Button layoutX="57.0" layoutY="127.0" mnemonicParsing="false" onAction="#Knap5" prefHeight="27.0" prefWidth="28.0" text="5" />
-      <Button layoutX="107.0" layoutY="127.0" mnemonicParsing="false" onAction="#Knap6" prefHeight="27.0" prefWidth="28.0" text="6" />
-      <Button layoutX="8.0" layoutY="75.0" mnemonicParsing="false" onAction="#Knap7" prefHeight="27.0" prefWidth="28.0" text="7" />
-      <Button layoutX="55.0" layoutY="75.0" mnemonicParsing="false" onAction="#Knap8" prefHeight="27.0" prefWidth="28.0" text="8" />
-      <Button layoutX="107.0" layoutY="75.0" mnemonicParsing="false" onAction="#Knap9" text="9" />
-      <Button layoutX="171.0" layoutY="75.0" mnemonicParsing="false" onAction="#knapPLus" text="+" />
-      <Button layoutX="170.0" layoutY="127.0" mnemonicParsing="false" onAction="#knapminus" prefHeight="27.0" prefWidth="28.0" text="-" />
-      <Button layoutX="170.0" layoutY="178.0" mnemonicParsing="false" onAction="#knapDividere" prefHeight="27.0" prefWidth="28.0" text="/" />
-      <Button layoutX="170.0" layoutY="227.0" mnemonicParsing="false" onAction="#knapGange" prefHeight="27.0" prefWidth="28.0" text="*" />
-      <Button layoutX="8.0" layoutY="266.0" mnemonicParsing="false" onAction="#calc" prefHeight="27.0" prefWidth="75.0" text="=" />
-      <Button layoutX="8.0" layoutY="227.0" mnemonicParsing="false" onAction="#Knap0" prefHeight="27.0" prefWidth="26.0" text="0" />
-      <Label layoutX="98.0" layoutY="271.0" prefHeight="17.0" prefWidth="111.0" text="Lommeregner 2.0" />
-      <Button layoutX="56.0" layoutY="227.0" mnemonicParsing="false" onAction="#clear" prefHeight="27.0" prefWidth="26.0" text="C" />
+      <GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button mnemonicParsing="false" prefHeight="169.0" prefWidth="185.0" text="4" GridPane.rowIndex="2" />
+            <Button mnemonicParsing="false" prefHeight="169.0" prefWidth="185.0" text="7" GridPane.rowIndex="1" />
+            <Button mnemonicParsing="false" prefHeight="169.0" prefWidth="185.0" text="8" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Button mnemonicParsing="false" prefHeight="169.0" prefWidth="185.0" text="5" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Button mnemonicParsing="false" prefHeight="169.0" prefWidth="185.0" text="9" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <Button mnemonicParsing="false" prefHeight="169.0" prefWidth="185.0" text="1" GridPane.rowIndex="3" />
+            <Button mnemonicParsing="false" prefHeight="169.0" prefWidth="185.0" text="2" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Button mnemonicParsing="false" prefHeight="169.0" prefWidth="185.0" text="6" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <Button mnemonicParsing="false" prefHeight="169.0" prefWidth="185.0" text="3" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+            <Button mnemonicParsing="false" prefHeight="169.0" prefWidth="185.0" text="0" GridPane.rowIndex="4" />
+            <Button mnemonicParsing="false" prefHeight="169.0" prefWidth="185.0" text="C" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Button mnemonicParsing="false" prefHeight="169.0" prefWidth="185.0" text="=" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+            <Button mnemonicParsing="false" prefHeight="169.0" prefWidth="185.0" text="-" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+            <Button mnemonicParsing="false" prefHeight="169.0" prefWidth="185.0" text="/" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+            <Button mnemonicParsing="false" prefHeight="169.0" prefWidth="185.0" text="*" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+            <Button mnemonicParsing="false" prefHeight="169.0" prefWidth="185.0" text="/" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+         </children>
+      </GridPane>
+      <TextField prefHeight="80.0" prefWidth="300.0" />
    </children>
-</AnchorPane>
+</Pane>
