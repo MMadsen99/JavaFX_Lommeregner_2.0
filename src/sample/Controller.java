@@ -2,53 +2,59 @@ package sample;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.TextArea;
-import org.w3c.dom.ls.LSOutput;
+import javafx.scene.control.TextField;
 
 public class Controller {
+    //TODO switchcase til operators, split string jeg får fra TextFieldTekst.gettext();
     @FXML
-    private TextArea textAreaTekst;
+     private TextArea TextFieldTekst;
 
     public void Knap0(){
-        textAreaTekst.appendText("0");
+        TextFieldTekst.appendText("0");
     }
     public void Knap1(){
-        textAreaTekst.appendText("1");
+        TextFieldTekst.appendText("1");
     }
     public void Knap2(){
-        textAreaTekst.appendText("2");
+        TextFieldTekst.appendText("2");
     }
     public void Knap3(){
-        textAreaTekst.appendText("3");
+        TextFieldTekst.appendText("3");
     }
     public void Knap4(){
-        textAreaTekst.appendText("4");
+        TextFieldTekst.appendText("4");
     }
     public void Knap5(){
-        textAreaTekst.appendText("5");
+        TextFieldTekst.appendText("5");
     }
     public void Knap6(){
-        textAreaTekst.appendText("6");
+        TextFieldTekst.appendText("6");
     }
     public void Knap7(){
-        textAreaTekst.appendText("7");
+        TextFieldTekst.appendText("7");
     }
     public void Knap8(){
-        textAreaTekst.appendText("8");
+        TextFieldTekst.appendText("8");
     }
     public void Knap9(){
-        textAreaTekst.appendText("9");
+        TextFieldTekst.appendText("9");
     }
     public void knapPLus(){
-        textAreaTekst.appendText(" + ");
+        TextFieldTekst.appendText(" + ");
     }
     public void knapMinus(){
-        textAreaTekst.appendText(" - ");
+        TextFieldTekst.appendText(" - ");
     }
     public void knapDividere(){
-        textAreaTekst.appendText(" / ");
+        TextFieldTekst.appendText(" / ");
     }
     public void knapGange(){
-        textAreaTekst.appendText(" * ");
+        TextFieldTekst.appendText(" * ");
     }
+    public void clear(){
+        TextFieldTekst.clear();
+    }
+    public void calc(){
 
+    }
 }
