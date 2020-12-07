@@ -6,6 +6,7 @@ import javafx.scene.control.TextField;
 
 public class Controller {
     //TODO switchcase til operators, split string jeg får fra TextFieldTekst.gettext();
+    String operator = "";
     @FXML
      private TextArea TextFieldTekst;
 
@@ -39,22 +40,46 @@ public class Controller {
     public void Knap9(){
         TextFieldTekst.appendText("9");
     }
-    public void knapPLus(){
-        TextFieldTekst.appendText(" + ");
+    public void knapPlus(){
+        operator = "+";
+        operatorchocer();
     }
     public void knapMinus(){
-        TextFieldTekst.appendText(" - ");
+        operator = "-";
+        operatorchocer();
     }
     public void knapDividere(){
-        TextFieldTekst.appendText(" / ");
+        operator = "/";
+        operatorchocer();
     }
     public void knapGange(){
-        TextFieldTekst.appendText(" * ");
+        operator = "*";
+        operatorchocer();
     }
     public void clear(){
         TextFieldTekst.clear();
     }
     public void calc(){
+        System.out.println(operator);
+
+    }
+    public void operatorchocer(){
+
+        switch (operator){
+            case "-":
+                TextFieldTekst.appendText("-");
+                break;
+            case "+":
+                TextFieldTekst.appendText("+");
+                break;
+            case "*":
+                TextFieldTekst.appendText("*");
+                break;
+            case "/":
+                TextFieldTekst.appendText("/");
+                break;
+
+        }
 
     }
 }
